@@ -7821,12 +7821,12 @@ local eyeofhagane = {
 	name = "cry-eyeofhagane",
 	key = "eyeofhagane",
 	order = 136,
-	pos = { x = 4, y = 1 },
+	pos = { x = 4, y = 1 }, -- remember balatro atlas starts at {x = 0, y = 0}
 	rarity = 2,
 	cost = 6,
 	blueprint_compat = false,
 	immutable = true,
-	atlas = "placeholders", -- https://discord.com/channels/1264429948970733782/1274103559113150629/1351479917367263312
+	atlas = "atlastwo", -- https://discord.com/channels/1264429948970733782/1274103559113150629/1351479917367263312
 	calculate = function(self, card, context)
 		if context.before then
 			for i = 1, #context.full_hand do
